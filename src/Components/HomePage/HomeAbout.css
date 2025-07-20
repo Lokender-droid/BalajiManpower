@@ -1,0 +1,169 @@
+/* Root Wrapper */
+.Home-about-wrapper {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Flex Container */
+.Home-about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Content Section */
+.Home-about-content {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Title */
+.Home-about-title {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.Home-about-title span {
+  color: red;
+  font-size: 2rem;
+  word-break: break-word;
+}
+
+/* Paragraph Text */
+.Home-about-content p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Mission Highlight */
+.Home-about-mission {
+  color: #000;
+  background: #eef5ff;
+  padding: 15px;
+  border-left: 5px solid #e91212;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: background 0.3s ease;
+}
+
+.Home-about-mission:hover {
+  background: #d9eaff;
+}
+
+/* Image Visual Block */
+.Home-about-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Image Styling */
+.about-image {
+  width: 100%;
+  height: 30rem;
+  /* max-width: 400px; */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Responsive: Tablets */
+@media (max-width: 992px) {
+  .Home-about-title {
+    font-size: 30px;
+  }
+
+  .Home-about-title span {
+    font-size: 28px;
+  }
+
+  .Home-about-content p {
+    font-size: 17px;
+  }
+
+  .about-image {
+    max-width: 350px;
+  }
+}
+
+/* Responsive: Mobile Devices */
+@media (max-width: 768px) {
+  .Home-about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Home-about-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .Home-about-title span {
+    font-size: 26px;
+  }
+
+  .Home-about-content,
+  .Home-about-visual {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .Home-about-content p {
+    font-size: 16px;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .Home-about-title {
+    font-size: 22px;
+  }
+
+  .Home-about-title span {
+    font-size: 24px;
+  }
+
+  .Home-about-content p {
+    font-size: 15px;
+  }
+
+  .Home-about-wrapper {
+    padding: 40px 15px;
+  }
+
+  .about-image {
+    height: 14rem;
+    width: 100%;
+    border-radius: 15px;
+  }
+}

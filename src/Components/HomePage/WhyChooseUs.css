@@ -1,0 +1,141 @@
+.why-choose-us-section {
+  padding: 60px 20px;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.why-choose-us-heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #002855;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+.feature-box {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.feature-box:hover {
+  border-bottom:1px solid red;
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon-wrapper {
+  position: relative;
+}
+
+.feature-icon {
+  color: #ff4d4d;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.feature-box p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.trust-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  color: #111;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Fade Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Enhancements */
+@media (max-width: 992px) {
+  .why-choose-us-heading {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .feature-box {
+    padding: 18px;
+  }
+
+  .feature-box p {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-us-section {
+    padding: 40px 16px;
+  }
+
+  .why-choose-us-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .features-grid {
+    gap: 20px;
+  }
+
+  .feature-icon {
+    font-size: 22px;
+  }
+
+  .feature-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose-us-heading {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .feature-box {
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-box p {
+    font-size: 13.5px;
+  }
+
+  .feature-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}

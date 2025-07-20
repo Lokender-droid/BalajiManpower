@@ -1,0 +1,220 @@
+/* General Container */
+.contact-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #1c1c1c;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Banner Section */
+.contact-banner {
+  background: linear-gradient(135deg, #000000d5, #ff0000ee);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 7rem;
+  animation: fadeInDown 1s ease-in;
+}
+
+.contact-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Form & Visual Layout */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  border: 1px solid red;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  animation: slideUp 1.2s ease;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f01111;
+}
+
+.form-group label {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  background: #f9f9f9;
+  padding: 0 6px;
+  color: #777;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #b80037;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(135deg, #000000d5, #ff0000ee);
+  color: #fff;
+  border: none;
+  padding: 14px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  background:linear-gradient(135deg, #000000, #ff0000fb);
+}
+
+/* Unique Visual Design Box */
+.contact-visual-box {
+  flex: 0.8;
+  background: linear-gradient(135deg, #000000d5, #ff0000ee);
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(116, 0, 184, 0.15);
+  position: relative;
+  overflow: hidden;
+  animation: slideRight 1.2s ease;
+}
+
+.contact-visual-box h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.contact-visual-box p {
+  color: #f3f3f3;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Floating Circle Decoration */
+.circle-shape {
+  position: absolute;
+  bottom: -20px;
+  right: -30px;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #000000d5, #ff0000ee);
+  opacity: 0.1;
+  border-radius: 50%;
+  animation: floatShape 6s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatShape {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-20px) scale(1.1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-visual-box {
+    width: 100%;
+  }
+
+  .contact-visual-box {
+    margin-top: 20px;
+  }
+
+  .contact-banner h1 {
+    font-size: 2rem;
+  }
+}

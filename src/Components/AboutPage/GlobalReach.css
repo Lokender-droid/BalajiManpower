@@ -1,0 +1,61 @@
+.globalreach-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.globalreach-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.globalreach-card {
+  flex: 1 1 500px;
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.globalreach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.globalreach-icon {
+  font-size: 36px;
+  color: #0066ff;
+  margin-bottom: 15px;
+}
+
+.belief-icon {
+  color: #ff9500;
+}
+
+.globalreach-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.globalreach-desc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .globalreach-grid {
+    flex-direction: column;
+  }
+
+  .globalreach-card {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,79 @@
+.wmud-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wmud-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.wmud-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.wmud-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.wmud-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.wmud-icon {
+  font-size: 32px;
+  color: red;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.wmud-content {
+  flex-grow: 1;
+}
+
+.wmud-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.wmud-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .wmud-heading {
+    font-size: 1.8rem;
+  }
+
+  .wmud-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 94%;
+  }
+
+  .wmud-icon {
+    margin-bottom: 10px;
+  }
+}

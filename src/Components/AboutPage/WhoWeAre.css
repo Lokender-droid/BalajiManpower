@@ -1,0 +1,40 @@
+.who-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+.who-content {
+  text-align: center;
+}
+
+
+.who-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.who-description {
+    text-align: justify;
+  font-size: 17px;
+  color: #444;
+  /* line-height: 1.8; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .who-heading {
+    font-size: 24px;
+  }
+
+  .who-description {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,130 @@
+.home-services {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  /* max-width: 1200px; */
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 40px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+.services-container {
+  max-width: 1200px;
+  /* align-items: center; */
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1 1 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding-bottom: 20px;
+  min-height: 500px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon-overlay {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 24px;
+  color: #1d3557;
+}
+
+.service-content {
+  flex-grow: 1;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 15px 10px;
+  color: #0d1b2a;
+}
+
+.service-description {
+  font-size: 14px;
+  margin: 0 15px 10px;
+  color: #333;
+}
+
+.service-keywords {
+  font-size: 13px;
+  margin: 0 15px;
+  color: #6c757d;
+}
+
+.service-button {
+  margin: 15px 15px 0;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #000000d5, #ff0000ee);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.service-button:hover {
+  background: linear-gradient(135deg, #1a1a1af1, #cc0000);
+  transform: translateY(-2px);
+}
+
+
+/* Responsive: 2 per row on tablets, 1 on mobile */
+@media (max-width: 1024px) {
+  .service-card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-card {
+    flex: 1 1 100%;
+  }
+
+  .service-button {
+    /* width: 100%; */
+    text-align: center;
+  }
+}

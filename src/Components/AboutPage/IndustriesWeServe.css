@@ -1,0 +1,78 @@
+.industries-we-section {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.industries-we-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #1e1e1e;
+  position: relative;
+}
+
+.industries-we-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #e63946;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.industries-we-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.industry-we-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 35px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.industry-we-card::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  /* background: linear-gradient(135deg, #000000d5, #ff0000ee); */
+  z-index: 0;
+  transform: rotate(0deg);
+  opacity: 0.05;
+  transition: opacity 0.4s ease;
+}
+
+.industry-we-card:hover::before {
+  opacity: 0.15;
+}
+
+.industry-we-icon {
+  font-size: 2rem;
+  color: red;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.industry-we-name {
+  font-size: 1.25rem;
+  /* font-weight: 600; */
+  color: #333;
+  z-index: 1;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
